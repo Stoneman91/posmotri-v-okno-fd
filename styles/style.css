@@ -233,7 +233,7 @@ html {
   text-decoration: underline;
 }
 
-.content__card-link:active{
+.content__card-link:active {
   background-color: rgba(84, 80, 80, 1);
 }
 
