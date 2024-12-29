@@ -69,11 +69,9 @@ html {
 .search-form__label {
   cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
-}
-
-.search-form__label:hover {
-  text-decoration: underline;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -81,11 +79,15 @@ html {
   outline-offset: 2px;
 }
 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
 .search-form__textfield {
   border: none;
   font-weight: 400;
   line-height: 21.6px;
-  color:rgba(255, 255, 255, 0.7);
+  color: white;
   background-color: transparent;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
@@ -94,7 +96,7 @@ html {
 }
 
 .search-form__textfield:has(:focus-visible) {
-  outline: 1px solid white;
+  outline: 1px solid currentColor;
   outline-offset: 2px;
 }
 
@@ -147,9 +149,23 @@ html {
 
 .button {
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid currentColor;
   color: white;
   background-color: transparent;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.button:has(:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 2px;
 }
 
 .search-form__submit-button {
@@ -157,35 +173,9 @@ html {
   height: 34px;
 }
 
-.search-form__submit-button:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:active {
-  background-color: rgba(84, 80, 80, 1);
-}
-
-.search-form__submit-button:has(:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 2px;
-}
-
 .more-button {
   width: 100%;
   height: 34px;
-}
-
-.more-button:hover {
-  text-decoration: underline;
-}
-
-.more-button:active {
-  background-color: rgba(84, 80, 80, 1);
-}
-
-.more-button:has(:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 2px;
 }
 
 .content__details {
@@ -229,26 +219,27 @@ html {
   padding: 0 3px;
 }
 
-.content__list-item:hover {
-  text-decoration: underline;
-}
-
-.content__list-item:active {
-  background-color: rgba(84, 80, 80, 1);
-}
-
-.content__list-item:has(:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 2px;
-}
-
 .content__list-item:last-child {
   margin-bottom: 30px;
 }
 
 .content__card-link {
+  display:block;
   text-decoration: none;
   color: white;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active{
+  background-color: rgba(84, 80, 80, 1);
+}
+
+.content__card-link:has(:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 2px;
 }
 
 .content__card-link_current {
@@ -262,7 +253,7 @@ html {
 }
 
 .content__video-card-title {
-font-family: Oswald;
+font-family: 'Oswald', sans-serif;
 text-transform: uppercase;
 font-weight: 700;
 font-size: 30px;
