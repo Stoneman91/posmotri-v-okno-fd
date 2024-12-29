@@ -300,7 +300,11 @@ text-overflow: ellipsis;
 
 
 
+<<<<<<< HEAD
+.visually-hidden {
+=======
   .visually-hidden { 
+>>>>>>> bf256ec00deee2c8ea4bc6f815f6c3a3f0d3ae14
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
