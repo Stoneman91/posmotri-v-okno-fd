@@ -26,6 +26,7 @@ html {
   gap: 30px;
   max-width: 1140px;
   max-height: 534px;
+  align-items: end;
 }
 
 .result {
@@ -306,6 +307,14 @@ text-overflow: ellipsis;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.pixel-perfect-image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
 }
 
 h1,
