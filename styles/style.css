@@ -19,7 +19,7 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .content {
@@ -27,7 +27,6 @@ html {
   grid-template-columns: 711px 399px;
   gap: 30px;
   max-width: 1140px;
-  max-height: 534px;
   align-items: end;
 }
 
@@ -35,7 +34,6 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-height: 456px;
 }
 
 .result__video-container {
@@ -72,6 +70,7 @@ html {
 .search-form__label {
   cursor: pointer;
   display: flex;
+  align-items: center;
   gap: 5px;
   width: fit-content;
 }
@@ -171,8 +170,7 @@ html {
 }
 
 .button:active {
-  outline: 1px solid white;
-  outline-offset: 2px;
+  background-color: rgba(84, 80, 80, 1);
 }
 
 .button:has(:focus-visible) {
@@ -315,8 +313,8 @@ text-overflow: ellipsis;
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-60%);
-  opacity: 0.4;
+  transform: translateX(-50%);
+  opacity: 0.5;
 }
 
 h1,
