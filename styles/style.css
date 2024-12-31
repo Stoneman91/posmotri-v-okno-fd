@@ -34,6 +34,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: end;
 }
 
 .result__video-container {
@@ -190,7 +191,7 @@ html {
 
 .content__details {
   min-width: 100%;
-  min-height: 100%;
+  min-height: 534px;
   display: flex;
   flex-direction: column;
   gap: 26px;
