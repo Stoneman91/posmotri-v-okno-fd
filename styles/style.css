@@ -191,7 +191,7 @@ html {
 
 .content__details {
   min-width: 100%;
-  min-height: 534px;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -214,7 +214,7 @@ html {
 
 .content__list-container {
   position: relative;
-  max-height: 298px;
+  height: 298px;
   overflow: auto;
 }
 
