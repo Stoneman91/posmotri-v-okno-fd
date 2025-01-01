@@ -212,16 +212,16 @@ html {
   color: #545050;
 }
 
-.content__list-container {
-  position: relative;
-  height: 298px;
-  overflow: auto;
-}
-
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow: auto;
+}
+
+.content__list-container {
+  position: relative;
+  height: 298px;
   overflow: auto;
 }
 
